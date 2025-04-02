@@ -28,6 +28,16 @@ class WelcomeViewController: UIViewController {
         titleLabel.text = ""
         var charIndex = 0.0
         let titleText = K.appName
+        
+        /*
+                 
+         The loop itself finishes in milliseconds. But all the timers are now scheduled to fire one after another, each with a delay of 0.1 * charIndex.
+         
+         So it's like saying:
+         
+         “Hey system, please call this code later — at this many seconds from now.”
+         */
+        
         for letter in titleText {
             Timer.scheduledTimer(withTimeInterval: 0.1 * charIndex, repeats: false) { (timer) in
                 self.titleLabel.text?.append(letter)

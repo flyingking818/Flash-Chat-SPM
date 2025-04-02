@@ -16,6 +16,15 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var passwordTextfield: UITextField!
     
     @IBAction func registerPressed(_ sender: UIButton) {
+        /*
+         Auth is the class.
+         
+         It defines the behavior of Firebase Authentication.
+         
+         auth() is a class method.
+         
+         It returns a singleton instance of Auth.
+         */
        
         if let email = emailTextfield.text, let password = passwordTextfield.text {
             Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
