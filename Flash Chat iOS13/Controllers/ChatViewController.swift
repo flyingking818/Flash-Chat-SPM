@@ -5,9 +5,12 @@
 //  Created by Angela Yu on 21/10/2019.
 //  Copyright © 2019 Angela Yu. All rights reserved.
 //
+// Updated by Jeremy Wang using Swift Package Manager (SPM)
+// 4/1/2025
 
 import UIKit
 import Firebase
+import FirebaseAuth
 
 class ChatViewController: UIViewController {
 
