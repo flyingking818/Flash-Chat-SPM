@@ -82,6 +82,8 @@ class ChatViewController: UIViewController {
                 }
             }
         }
+        
+        view.endEditing(true)
     }
     
     @IBAction func logOutPressed(_ sender: UIBarButtonItem) {
